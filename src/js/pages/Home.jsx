@@ -86,7 +86,7 @@ const Body = ({data, pageCount, post, redirect, setCurrentPage, page}) => {
 				dataSource={people || []}
 				pagination={{position: ['none', 'none']}}
 			/>
-			<Paging count={count} page={page} onClick={setCurrentPage} />
+			{count && <Paging count={count} page={page} onClick={setCurrentPage} />}
 		</>
 	);
 };
