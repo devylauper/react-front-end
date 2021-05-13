@@ -1,4 +1,4 @@
-# apollo-api-server
+# react-front-end
 ## Install
 node 12 \
 `npm install
