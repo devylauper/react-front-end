@@ -1,0 +1,17 @@
+/*
+    [HACK]: For the UI Framework ANT.DESIGN, because its written in .less but 
+    the base of this website is written in .sass, we need to work around the issue. 
+    So we created this file which imports the main stylesheet and we overwrite the 
+    variables at the end to our new variables, ultimately themeing out ANT.DESIGN.
+    The two theme stylesheets you will be referencing are listed below:
+
+    https://ant.design/docs/react/customize-theme
+    https://github.com/ant-design/ant-design/blob/master/components/style/color/colors.less
+    https://github.com/ant-design/ant-design/blob/master/components/style/themes/default.less
+
+    Copy and paste over the Variables from the above links into vendor-vars-overwrites.less file as you need them, 
+    alternatively copy and paste everything and do a full overwrite.    
+    
+*/
+@import "~antd/lib/style/themes/default.less";
+@import "~antd/dist/antd.less";
